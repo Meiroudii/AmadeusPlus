@@ -17,6 +17,7 @@ class VoiceLine {
         TypedArray data = context.getResources().obtainTypedArray(id);
         this.id = context.getResources().getIdentifier(data.getString(0), "raw", context.getPackageName());
         String moodString = data.getString(1);
+        // Add more moods here
         switch (moodString) {
             case "happy":
                 mood = R.drawable.kurisu_front;
